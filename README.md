@@ -9,13 +9,13 @@ The goal is twofold:
 
 ## Background
 
-Event Sourcing is an **exciting** new way to build applications. Actually, it's _not_ new. Some of these concepts have been around for decades. But recent trends in **serverless** computing and **microservice** architectures have made it relevant once again and, perhaps, more accessible than ever!
+Event Sourcing is an **exciting** new way to build applications. Actually, it's _not_ new. Some of these concepts have been around for decades. But recent trends in **serverless** computing and **microservice** architectures have made it relevant once again and, _perhaps_ more accessible than ever!
 
 #### Microservices
 
 The idea behind microservices is to break up monolithic applications into distinct services, each with clear service boundaries and specific concerns. This helps with testing, reasoning about changes, and can help to prevent coupling.
 
-Microservices still need to communicate with each other to coordinate work. One way they do this is through a **stream of events**. As each service performs a task, it broadcasts the event to other service which can choose to react and perform their own task in response.
+Microservices still need to communicate with each other to coordinate work. One way they do this is through a **stream of events**. As each service performs a task, it broadcasts the event to other services which can choose to react and perform their own task in response.
 
 For example, a **payment service** might listen for `orderCreated` events from the **order service** and react by charging the user. If the charge is successful, it \(the service\) will broadcast a `paymentSuccess` event which then triggers the **fulfillment service** to do something, and so on...
 
