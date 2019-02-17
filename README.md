@@ -21,12 +21,6 @@ For example, a **payment service** might listen for `orderCreated` events from t
 
 Event sourcing fits naturally into this flow by bringing events front-and-center in the lifecycle of your entities. Because all events are captured and are immutable, services that go offline, or otherwise loose the continuity of the event stream, can simply pick up where they left off. Furthermore, as new services come online they can request the event history in order to populate their initial state.
 
-## Why should I use it?
-
-I enjoy building systems this way because it let's me describe my business domain as simple, pure functions. Redux-style.
-
-I also like that it allows me to start building an application without spending too much time thinking about the database schema. With the traditional RDBMS, all my entities had to fit neatly into this two-dimensional space of flat tables joined by foreign keys. With NoSQL, my data was schema-less but migrations were tedious. With ES, when I decide to make a schema change I just dump the read-model and regenerate it with the snap of my fingers.
-
 ## Definitions
 
 #### CQRS \(Command-Query Responsibility Separation\)

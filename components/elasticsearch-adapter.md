@@ -6,9 +6,9 @@ A library that implements the [Read Model](https://serverless-cqrs.gitbook.io/se
 
 ### build
 
-`build({ entityName }, { endpoint )` 
+`build({ entityName }, { endpoint )`
 
-builds a read-model adapter 
+builds a read-model adapter
 
 #### Parameters
 
