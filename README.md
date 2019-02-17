@@ -9,7 +9,7 @@ The goal is twofold:
 
 ## Background
 
-Event Sourcing is an **exciting** new way to build applications. Actually, it's _not_ new. Some of these concepts are **decades** old. But recent trends in **serverless** computing and **microservice** architectures have made it relevant once again and, perhaps, more accessible than ever!
+Event Sourcing is an **exciting** new way to build applications. Actually, it's _not_ new. Some of these concepts have been around for decades. But recent trends in **serverless** computing and **microservice** architectures have made it relevant once again and, perhaps, more accessible than ever!
 
 #### Microservices
 
@@ -19,13 +19,9 @@ Microservices still need to communicate with each other to coordinate work. One 
 
 For example, a **payment service** might listen for `orderCreated` events from the **order service** and react by charging the user. If the charge is successful, it \(the service\) will broadcast a `paymentSuccess` event which then triggers the **fulfillment service** to do something, and so on...
 
-Event sourcing fits naturally into this flow by bringing events front and center in the lifecycle of an object. Because all events are stored and are immutable, services that go offline, or otherwise loose continuity of the event stream, can simply pick up where they left off. Additionally, as new services come online, they can request the event history in order to populate their initial state.
+Event sourcing fits naturally into this flow by bringing events front-and-center in the lifecycle of your entities. Because all events are captured and are immutable, services that go offline, or otherwise loose the continuity of the event stream, can simply pick up where they left off. Furthermore, as new services come online they can request the event history in order to populate their initial state.
 
 ## Why should I use it?
-
-In many cases, you probably don't need an Event Sourced system. It's a significant departure from the standard and can be complex to reason about initially. A simple CRUD system is usually sufficient.
-
-However, if you've already decide to build an ES system, this library can help you get started quickly.
 
 I enjoy building systems this way because it let's me describe my business domain as simple, pure functions. Redux-style.
 
