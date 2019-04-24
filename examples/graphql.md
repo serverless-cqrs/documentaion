@@ -2,7 +2,7 @@
 
 ## Description
 
-[Open in GitHub](ttps://github.com/serverless-cqrs/graphql-example)
+[Open in GitHub](https://github.com/serverless-cqrs/graphql-example)
 
 {% hint style="info" %}
 First, make sure you've run `npm i -g serverless` and added your [AWS credentials](https://serverless.com/framework/docs/providers/aws/guide/credentials/).
