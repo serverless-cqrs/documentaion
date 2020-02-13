@@ -29,7 +29,7 @@ const writeModel = writeModelBuilder.build({
 
 \(bring your own adapters and friends ;\)
 
-If you would like to have a look at [the source](https://github.com/serverless-cqrs/serverless-cqrs/tree/master/src), you'll see that it really doesn't do much on it's own, it just simplifies a bit the initialization of your models.
+If you would like to have a look at [the source](https://github.com/serverless-cqrs/serverless-cqrs/tree/master/packages/serverless-cqrs/src), you'll see that it really doesn't do much on it's own, it just simplifies a bit the initialization of your models.
 
 
 
