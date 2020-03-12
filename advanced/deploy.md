@@ -103,7 +103,7 @@ server.start(() => console.log('Server is running on localhost:4000'))
 
 We're really not doing very much in either of these examples, we simply forward requests from the API to our read or write model. In the case of GraphQL, it's a bit more explicit.
 
-## Servereless Framwork
+## Serverless Framwork
 
 Now let's look at deploying using the awesome [serverless framework](https://serverless.com/framework/).
 
